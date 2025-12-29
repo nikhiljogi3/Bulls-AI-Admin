@@ -17,11 +17,14 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.24.0" # Adjust to your Flutter version
+          flutter-version: "3.38.5" # Adjust to your Flutter version
           channel: "stable"
 
       - name: Get dependencies
         run: flutter pub get
+
+      - name: Enable web
+        run: flutter config --enable-web
 
       - name: Build web
         run: flutter build web --release --base-href "/Bulls-AI-Admin/"
