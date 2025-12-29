@@ -1,0 +1,16 @@
+{"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"bullsassets-b8018","configurations":{"web":"1:942346123168:web:e27726ac2a63264e7c16c5"}}}}},
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
